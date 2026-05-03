@@ -9,7 +9,7 @@ pipeline {
         }
      stage ('docker run') {
        steps{
-         sh "docker run -it myapp:01"
+         sh "docker run --rm myapp:01"
        }
      }
     }
